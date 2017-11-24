@@ -1,0 +1,136 @@
+html, body {
+	height: 100%;
+}
+
+
+.m-t-10 { margin-top:10px !important; }
+.m-b-10 { margin-bottom:10px !important; }
+.m-t-20 { margin-top:20px !important; }
+.m-b-20 { margin-bottom:20px !important; }
+
+.bg-success { background-color: #dff0d8 !important; }
+.bg-danger { background-color: #f2dede !important; }
+
+.container {
+	max-width: 800px;
+}
+
+h1{
+	font-size: 24px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.download {
+	display: inline-block;
+}
+
+ul, li {
+	display: block;
+	width: 100%;
+	padding: 0;
+}
+
+li {
+	padding: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+li:nth-child(odd) {
+	background-color: #f5f5f5;
+}
+li:nth-child(even) {
+	background-color: #daedc7;
+}
+
+.chat {
+    	height: calc(100vh - 380px);
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	display: block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.author {
+	font-weight: bold;
+}
+.message {
+	display: block;
+	width: calc(100% - 40px);
+	white-space: normal;
+}
+.date {
+	font-size: 11px;
+	padding-left: 10px;
+}
+
+.delete {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-color: transparent;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	float: right;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	margin: 0px;
+	padding: 0;
+}
+
+.delete:hover {
+	background-color: #f00;
+}
+.delete:before, .delete:after {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	content: ' ';
+	height: 12px;
+	width: 2px;
+	background-color: #777;
+}
+.delete:hover:before, .delete:hover:after {
+	background-color: #fff;
+
+}
+.delete:before {
+	transform: rotate(45deg);
+}
+.delete:after {
+	transform: rotate(-45deg);
+}
+
+
+
+@media only screen and (min-width: 970px) {
+	.chat {
+		height: 450px;
+	}
+
+}
+
